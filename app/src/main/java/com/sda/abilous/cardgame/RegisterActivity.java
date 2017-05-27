@@ -1,5 +1,6 @@
 package com.sda.abilous.cardgame;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -39,5 +40,10 @@ public class RegisterActivity extends AppCompatActivity {
         presenter.registerUser(this, email, password);
     }
 
+    @OnClick(R.id.signin)
+    public void signInUser() {
+        finish();
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+    }
 
 }

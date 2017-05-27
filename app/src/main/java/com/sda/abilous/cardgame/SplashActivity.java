@@ -13,6 +13,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         splash(splashTime);
+
+
     }
     private void splash(int time) {
         new Handler().postDelayed(new Runnable() {
